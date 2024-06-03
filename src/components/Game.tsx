@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Button, Text} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {RootState} from '../redux/store';
 import {playGame, resetGame} from '../redux/slices/ticTacSlice';
 import Square from './Square';
 import styles from '../styles';
+import { RootState } from '../redux/store/rootReducer';
 
 const Game = () => {
   const dispatch = useDispatch();
